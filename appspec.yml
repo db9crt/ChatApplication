@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home/ubuntu/ChatApplication
     overwrite: true
-    file_exists_behavior: OVERWRITE
+file_exists_behavior: OVERWRITE
 hooks:
 # ApplicationStop:
 # DownloadBundle:
