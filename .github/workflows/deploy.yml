@@ -8,14 +8,7 @@ permissions:
   contents: read
   
 jobs:  
-  build:
-    runs-on: ubuntu-latest
-    container: node:18
-    steps:
-    - uses: actions/checkout@v2
-    - run: npm install
-    - run: npm server.js
-    
+
   build-deploy:
     runs-on: ubuntu-latest
     container: node:18
@@ -26,6 +19,7 @@ jobs:
       
       # Step build
     - name: build
+    - uses: actions/checkout@v2
     - run: npm install
     - run: npm server.js
     
