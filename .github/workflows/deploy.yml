@@ -19,7 +19,7 @@ jobs:
       
       # Step build
     - name: build   
-      run:  cd client & npm run build
+      run:  cd client & npm i & npm run build
                
       # Step 2
     - name: Set AWS credentials
