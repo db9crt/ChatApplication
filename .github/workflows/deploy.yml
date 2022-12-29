@@ -24,7 +24,7 @@ jobs:
          cd client 
          npm i 
          npm run build
-         cd..
+         cd ..
          node server.js
          
       # Step 2
