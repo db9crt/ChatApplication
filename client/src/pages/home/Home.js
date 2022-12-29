@@ -64,7 +64,7 @@ export default function Home({ history }) {
         },
       })
     }
-  }, [messageError, messageData])
+  }, [messageError, messageData,messageDispatch,user.username])
 
   useEffect(() => {
     if (reactionError) console.log(reactionError)
@@ -84,7 +84,7 @@ export default function Home({ history }) {
         },
       })
     }
-  }, [reactionError, reactionData])
+  }, [reactionError, reactionData, messageDispatch,user.username])
 
   const logout = () => {
     authDispatch({ type: 'LOGOUT' })
