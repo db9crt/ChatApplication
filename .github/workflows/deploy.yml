@@ -16,13 +16,19 @@ jobs:
     - run: npm install
     - run: npm server.js
     
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
+    container: node:18
     steps:
       # Step 1
     - name: Checkout to repo
       uses: actions/checkout@v2
       
+      # Step build
+    - name: build
+    - run: npm install
+    - run: npm server.js
+    
       # Step 2
     - name: Set AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
