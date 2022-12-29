@@ -19,7 +19,7 @@ jobs:
       
       # Step build
     #- name: build   
-     # run:  npm install --save apollo-server-core & npm install & node server.js
+     # run:  npm install --save apollo-server & npm install
                
       # Step 2
     - name: Set AWS credentials
