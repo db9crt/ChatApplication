@@ -18,8 +18,12 @@ jobs:
       uses: actions/checkout@v2
       
       # Step build
-    #- name: build   
-    #  run:  cd client & npm i & npm run build
+    - name: build   
+      run: |
+         npm i
+         cd client 
+         npm i 
+         npm run build
                
       # Step 2
     - name: Set AWS credentials
