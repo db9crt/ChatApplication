@@ -19,7 +19,7 @@ jobs:
       
       # Step build
     - name: build   
-      run:   npm install -g npm@6.14.13  & node server.js
+      run:  npm run build
                
       # Step 2
     - name: Set AWS credentials
