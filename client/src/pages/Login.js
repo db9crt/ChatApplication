@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import { useAuthDispatch } from '../context/auth'
 
-const LOGIN_USER = gql`
+export const LOGIN_USER = gql`
   query login($username: String!, $password: String!) {
     login(username: $username, password: $password) {
       username
