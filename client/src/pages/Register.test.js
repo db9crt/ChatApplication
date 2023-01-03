@@ -8,7 +8,7 @@ import { mount , configure } from 'enzyme';
 import {act} from 'react-dom/test-utils';
 
 import { MockedProvider } from "@apollo/client/testing";
-import Register,{errors,username, submitLoginForm, REGISTER_USER, register} from './register';
+import Register,{errors,username, submitLoginForm, REGISTER_USER, register} from '../pages/register';
 import { createBrowserHistory } from 'history';
 
 import { isObjectType } from 'graphql';
