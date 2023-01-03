@@ -3,7 +3,7 @@ import { Row, Col, Form, Button } from 'react-bootstrap'
 import { gql, useMutation } from '@apollo/client'
 import { Link } from 'react-router-dom'
 
-const REGISTER_USER = gql`
+export const REGISTER_USER = gql`
   mutation register(
     $username: String!
     $email: String!
