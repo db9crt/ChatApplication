@@ -22,6 +22,6 @@ server.listen().then(({ url, subscriptionsUrl }) => {
 
   sequelize
     .authenticate()
-    .then(() => console.log('Database connected!!'))
+    .then(() => {console.log('Database connected!!'); process.exit();})
     .catch((err) => console.log(err))
 })
