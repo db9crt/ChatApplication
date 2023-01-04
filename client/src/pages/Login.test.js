@@ -47,7 +47,7 @@ const mocks = [
   normalizeWhitespace: false,
 };
 
- expect(wrapper.find(Form.Label).at(0).text()).toContain('UserName');
+ expect(wrapper.find(Form.Label).at(0).text()).toContain('Username');
 });
     
   });
