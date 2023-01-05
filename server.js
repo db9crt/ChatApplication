@@ -15,7 +15,7 @@ const server = new ApolloServer({
   context: contextMiddleware,
   subscriptions: { path: '/' },
 })
-abcdefg
+
 server.listen().then(({ url, subscriptionsUrl }) => {
   console.log(`🚀 Server ready at ${url}`)
   console.log(`🚀 Susbscription ready at ${subscriptionsUrl}`)
