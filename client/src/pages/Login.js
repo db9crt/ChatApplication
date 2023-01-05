@@ -45,13 +45,13 @@ export default function Register(props) {
         <h1 className="text-center">Login</h1>
         <Form onSubmit={submitLoginForm}>
           <Form.Group>
-            <Form.Label className={errors.username && 'text-danger'}>
-              {errors.username ?? 'Username'}
+            <Form.Label className={errors?.username && 'text-danger'}>
+              {errors?.username ?? 'Username'}
             </Form.Label>
             <Form.Control
               type="text"
-              value={variables.username}
-              className={errors.username && 'is-invalid'}
+              value={variables?.username}
+              className={errors?.username && 'is-invalid'}
               onChange={(e) =>
                 setVariables({ ...variables, username: e.target.value })
               }
