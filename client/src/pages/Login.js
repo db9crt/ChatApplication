@@ -46,7 +46,7 @@ export default function Register(props) {
         <Form onSubmit={submitLoginForm}>
           <Form.Group>
             <Form.Label className={errors.username && 'text-danger'}>
-              {errors.username ?? 'Userame'}
+              {errors.username ?? 'Useame'}
             </Form.Label>
             <Form.Control
               type="text"
