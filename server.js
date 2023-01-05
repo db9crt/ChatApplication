@@ -20,8 +20,8 @@ server.listen().then(({ url, subscriptionsUrl }) => {
   console.log(`🚀 Server ready at ${url}`)
   console.log(`🚀 Susbscription ready at ${subscriptionsUrl}`)
 
-  sequelize
+   sequelize
     .authenticate()
-    .then(() => console.log('Database connected!!');)
-    .catch((err) => console.log(err);)
+    .then(() => console.log('Database connected!!'))
+    .catch((err) => console.log(err))
 })
