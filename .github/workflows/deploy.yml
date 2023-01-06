@@ -18,12 +18,12 @@ jobs:
       uses: actions/checkout@v2
       
       # Step build
-  #  - name: build   
-   #   run: |
-    #     npm i
-     #    cd client 
-     #    npm i 
-     #    npm run build
+    - name: build   
+      run: |
+         npm i
+         cd client 
+         npm i 
+         npm run build
        
       
       # Step test
