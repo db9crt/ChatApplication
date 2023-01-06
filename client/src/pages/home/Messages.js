@@ -41,7 +41,8 @@ export default function Messages() {
 
   const selectedUser = users?.find((u) => u.selected === true)
   const messages = selectedUser?.messages
-
+  const selectedUsername = selectedUser?.username
+  
   const [
     getMessages,
     { loading: messagesLoading, data: messagesData },
@@ -62,12 +63,12 @@ export default function Messages() {
       dispatch({
         type: 'SET_USER_MESSAGES',
         payload: {
-          username: selectedUser.username,
+          username: selectedUsername,
           messages: messagesData.getMessages,
         },
       })
     }
-  }, [messagesData, dispatch, selectedUser?.username])
+  }, [messagesData, dispatch, selectedUsername])
 
   const submitMessage = (e) => {
     e.preventDefault()
