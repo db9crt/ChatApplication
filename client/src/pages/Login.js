@@ -22,6 +22,7 @@ export default function Register(props) {
     password: '',
   })
   const [errors, setErrors] = useState({})
+  console.log("Dona Errors " + errors)
 
   const dispatch = useAuthDispatch()
 
