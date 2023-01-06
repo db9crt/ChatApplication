@@ -62,7 +62,7 @@ export default function Messages() {
       dispatch({
         type: 'SET_USER_MESSAGES',
         payload: {
-          username: selectedUser?.username,
+          username: selectedUser.username,
           messages: messagesData.getMessages,
         },
       })
