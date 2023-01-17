@@ -95,7 +95,7 @@ const options = {
  normalizeWhitespace: false,
 };
 
-expect(wrapper.find(Button).text()).toContain("Login");
+expect(wrapper.find(Button).text()).toContain("Pogin");
 
 });
 
